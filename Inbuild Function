@@ -1,0 +1,18 @@
+import java.util.*;
+import java.util.Scanner;
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        String a="Pranav Adhithya";
+        String b="Pranav";
+        System.out.println(a.toUpperCase());
+        System.out.println(a.toLowerCase());
+        System.out.println(a.charAt(4));
+        System.out.println(a.length());
+        System.out.println(a.equals(b));
+        System.out.println(a.contains(b));
+        System.out.println(a.replace('a','z'));
+        System.out.println(a.substring(8,14));
+    }
+}
