@@ -11,3 +11,27 @@ class Main
         System.out.println(a+" "+b+" "+c);
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+		int ad=sc.nextInt();
+		switch(ad)
+		{
+		    case 1:
+		       System.out.println("Pavan"); 
+		       break;
+		    case 2:
+		       System.out.println("Rafi"); 
+		       break;
+		    case 3:
+		       System.out.println("Elango"); 
+		       break;  
+		}
+    }
+}
+
