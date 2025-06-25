@@ -10,4 +10,4 @@ class Main
         int c=sc.nextInt();
         System.out.println(a+" "+b+" "+c);
     }
-}*/
+}
