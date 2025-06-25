@@ -59,3 +59,14 @@ class Main
         System.out.println("Reverse:"+sb.reverse());
     }
 }
+
+import java.util.*;
+class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("Pranav");
+        sb.append(" I am Batman");
+        System.out.println(sb);
+    }
+}
