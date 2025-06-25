@@ -81,3 +81,14 @@ class Main
         System.out.println(sb);
     }
 }        
+
+import java.util.*;
+class Main 
+{
+    public static void main(String[] args)
+    {
+        StringBuffer sb=new StringBuffer("Java is a programming language");
+        sb.delete(3,6);
+        System.out.println(sb);
+    }
+}        
