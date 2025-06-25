@@ -16,3 +16,16 @@ class Main
         System.out.println(a.substring(8,14));
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        String a="Pranav";
+        String b="Adhithya";
+        System.out.println(a.indexOf("v"));
+        System.out.println(a.concat(b));
+    }
+}
