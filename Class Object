@@ -28,3 +28,41 @@ public class Main
         student1.display();
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Details
+{
+	String a="";
+	int b;
+	int c;
+	String d="";
+	String e="";
+	void display()
+	{
+	    System.out.println("Name: "+a);
+	    System.out.println("Age: "+b);
+	    System.out.println("CGPA: "+c);
+	    System.out.println("Phone Number: "+d);
+	    System.out.println("Email: "+e);
+	}
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Details student1=new Details();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Name: ");
+        student1.a=sc.nextLine();
+        System.out.println("Enter the age: ");
+        student1.b=sc.nextInt();
+        System.out.println("Enter the CGPA: ");
+        student1.c=sc.nextInt();
+        System.out.println("Enter the Phone Number: ");
+        student1.d=sc.next();
+        System.out.println("Enter the Email: ");
+        student1.e=sc.next();
+        student1.display();
+    }
+}
