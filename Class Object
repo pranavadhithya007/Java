@@ -1,0 +1,30 @@
+import java.util.*;
+class Details
+{
+	String a="";
+	int b;
+	int c;
+	String d;
+	String e="";
+	void display()
+	{
+	    System.out.println("Name: "+a);
+	    System.out.println("Age: "+b);
+	    System.out.println("CGPA: "+c);
+	    System.out.println("Phone Number: "+d);
+	    System.out.println("Email: "+e);
+	}
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Details student1=new Details();
+        student1.a="Pranav Adhithya";
+        student1.b=20;
+        student1.c=7;
+        student1.d="7358964521";
+        student1.e="pranav007@gmail.com";
+        student1.display();
+    }
+}
