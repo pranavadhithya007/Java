@@ -20,3 +20,34 @@ public class Main
         f.drive();
     }
 }
+
+class father
+{
+    void drive()
+    {
+        System.out.println("father drive the car");
+    }
+}
+class son extends father
+{
+    void drive()
+    {
+        System.out.println("Son drive very fast");
+    }
+}
+class sister extends son
+{
+    void drive()
+    {
+        System.out.println("Sister drive the car");
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        father f=new son();
+        son s=new sister();
+        s.drive();
+    }
+}
