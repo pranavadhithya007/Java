@@ -10,3 +10,42 @@ public class Main
         System.out.println("The number is:"+num);
     }
 }
+
+import java.util.*;
+class car
+{
+    private String engineType="Petrol";
+    public int numberOfDoor=4;
+    protected String brand="Audi";
+    String colour="Red";
+    public car()
+    {
+        System.out.println("Car object created");
+    }
+    public String getEngineType()
+    {
+        return engineType;
+    }
+    public void setEngineType(String engineType)
+    {
+        this.engineType=engineType;
+    }
+    public void showDetails()
+    {
+        System.out.println("Brand: "+brand);
+        System.out.println("Colour: "+colour);
+        System.out.println("Door: "+numberOfDoor);
+        System.out.println("Engine: "+engineType);
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        car myCar=new car();
+        myCar.showDetails();
+        myCar.setEngineType("diesel");
+        System.out.println("After updating engine type:");
+        myCar.showDetails();
+    }
+}
