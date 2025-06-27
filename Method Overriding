@@ -1,0 +1,22 @@
+class father
+{
+    void drive()
+    {
+        System.out.println("father drive the car");
+    }
+}
+class son extends father
+{
+    void drive()
+    {
+        System.out.println("Son drive very fast");
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        father f=new son();
+        f.drive();
+    }
+}
