@@ -18,3 +18,29 @@ public class Main
         f.sayHello("Ashok");
     }
 }
+
+class person
+{
+    void point1()
+    {
+        System.out.println("Hello");
+    }
+    void point2(String name)
+    {
+        System.out.println("My Name is "+name);
+    }
+    void point3(String place)
+    {
+        System.out.println("I'm from "+place);
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        person p=new person();
+        p.point1();
+        p.point2("Pranav");
+        p.point3("Namakkal");
+    }
+}
