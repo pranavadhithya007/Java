@@ -1,0 +1,46 @@
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("ENTER THE ARRAY SIZE : ");
+        int n=sc.nextInt();
+        System.out.println("ENTER THE " + n + " ARRAY  ELEMENTS ");
+        if(n>0)
+        {
+        int[]b=new int[n];
+            for(int i=0;i<n;i++)
+            {
+                b[i] = sc.nextInt();
+            }
+            System.out.print("Enter The Number to Found : ");
+            int c=sc.nextInt();
+            int d=0;
+            for(int i=0;i<n;i++)
+            {
+                if(b[i]== c)
+                {
+                    d=1;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            if(d>0)
+                {
+                    System.out.print("The Number " + c + " Found");
+                }
+            else
+                {
+                    System.out.print("The Number " + c + " Not Found");
+                }  
+            }
+        else
+        {
+            System.out.print("Invalid Array Size.");
+        }
+    }
+} 
