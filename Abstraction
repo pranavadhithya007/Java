@@ -1,0 +1,33 @@
+abstract class Person 
+{
+    abstract void work();
+    void eat() 
+    {
+        System.out.println("Eating food...");
+    }
+}
+class Student extends Person 
+{
+    void work() 
+    {
+        System.out.println("Studying for exams....");
+    }
+}
+class Teacher extends Person 
+{
+    void work() 
+    {
+        System.out.println("Teaching Java...");
+    }
+}
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Person p1 =new Student();
+        Person p2 =new Teacher();
+        p1.work();
+        p2.work();
+        p1.eat();
+    }
+}
