@@ -132,3 +132,32 @@ public class Main
         mybank.showdetails();
     }
 }
+
+class MovieTicket
+{
+    String Movie="F1";
+    private String TransactionId="pranavadhithya007";
+    protected String BookingLink="www.movieticketfor";
+    public String getTranscationId()
+    {
+        return TransactionId;
+    }
+    public void setTransactionId(String TransactionId)
+    {
+        this.TransactionId=TransactionId;
+    }
+public void showDetails()
+{
+    System.out.println("Your movie is "+Movie);
+    System.out.println("Your Transaction Id is "+TransactionId);
+    System.out.println(BookingLink+Movie+".com");
+}
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        MovieTicket u=new MovieTicket();
+        u.showDetails();
+    }
+}
