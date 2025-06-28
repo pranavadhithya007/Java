@@ -46,3 +46,16 @@ class Main
         System.out.print(sb.reverse());
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        StringBuffer sb=new StringBuffer(a);
+        System.out.print(sb.reverse());
+    }
+}
