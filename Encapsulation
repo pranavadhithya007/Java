@@ -71,3 +71,28 @@ public class Main
         System.out.println("Student Name:"+s.getName());
     }
 }
+
+class Vehicle
+{
+    protected String type="Sports Vehicle";
+    protected void displayType()
+    {
+        System.out.println("Vehicle Type:"+type);
+    }
+}
+class Bike extends Vehicle
+{
+    public void showDetails()
+    {
+        type="Royal Enfield";
+        displayType();
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        Bike myBike=new Bike();
+        myBike.showDetails();
+    }
+}
