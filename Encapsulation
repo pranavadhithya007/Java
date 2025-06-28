@@ -49,3 +49,25 @@ public class Main
         myCar.showDetails();
     }
 }
+
+class student
+{
+    private String name;
+    public String getName()
+    {
+        return name;
+    }
+    public void setName(String newName)
+    {
+        name=newName;
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        student s=new student();
+        s.setName("Pranav");
+        System.out.println("Student Name:"+s.getName());
+    }
+}
