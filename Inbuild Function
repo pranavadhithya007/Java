@@ -54,3 +54,15 @@ class Main
         System.out.println(a.replace('d','f'));
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+       Scanner sc=new Scanner(System.in);
+       String a=sc.nextLine();
+       System.out.println(a.substring(10,26));
+   }
+}
