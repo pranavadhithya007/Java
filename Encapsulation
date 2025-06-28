@@ -96,3 +96,39 @@ public class Main
         myBike.showDetails();
     }
 }
+
+import java.util.*;
+class bank
+{
+    private int accountNumber=142004;
+    public String customerName="Pranav Adhithya R S";
+    protected int pin=2004;
+    String bankname="IOB";
+    public bank()
+    {
+        System.out.println("bank account created");
+    }
+    public int getaccountNumber()
+    {
+        return accountNumber;
+    }
+    public void setaccountNumber(int accountNumber)
+    {
+        this.accountNumber=accountNumber;
+    }
+    public void showdetails()
+    {
+        System.out.println("Account Number:"+accountNumber);
+        System.out.println("Customer Name:"+customerName);
+        System.out.println("Pin:"+pin);
+        System.out.println("Bankname:"+bankname);
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        bank mybank=new bank();
+        mybank.showdetails();
+    }
+}
