@@ -37,3 +37,24 @@ public class Main
         System.out.println("Code run sucessfully");
     }
 }
+
+public class Main
+{
+   static void check(int age)
+   {
+       throw new ArithmeticException("age unku illa");
+   }
+   public static void main(String []args)
+   {
+       int a = 5;
+       try
+       {
+           check (17);
+       }
+       catch(ArithmeticException e)
+       {
+           System.out.println(e);
+       }
+       System.out.println(" vote eligiblity");
+   }
+}
