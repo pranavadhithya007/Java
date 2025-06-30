@@ -15,3 +15,25 @@ public class Main
         System.out.println("Hi");
     }
 }
+
+public class Main
+{
+    public static void main(String[]args)
+    {
+        String[]names={"Pranav","Adhithya","Pavan","Rafi"};
+        try
+        {
+            System.out.println(names[2]);
+            System.out.println(names[2].length());
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("Value Error: Invalid Index");
+        }
+        catch(NullPointerException e)
+        {
+            System.out.println("Error: Null Value found");
+        }
+        System.out.println("Code run sucessfully");
+    }
+}
