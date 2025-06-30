@@ -102,3 +102,30 @@ class Main
         System.out.println("Max:"+max);
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[]args)
+    {
+        System.out.println("Enter the number of elements:");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>0)
+        {
+            System.out.println("Enter the elements:");
+            int[]r=new int[a];
+            for(int i=0;i<a;i++)
+            {
+                r[i]=sc.nextInt();
+            }
+            Arrays.sort(r);
+            System.out.println("The Biggest element:"+r[a-1]);
+        }
+        else
+        {
+            System.out.println("Invalid Array Size.");
+        }
+    }
+}
