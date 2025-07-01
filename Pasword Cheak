@@ -41,3 +41,36 @@ class Main
        }
     }
 }
+
+import java.util.Scanner;
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The Password: ");
+        String password = sc.nextLine();
+
+        boolean a = false, b = false, c = false, d = false;
+
+        if (password.length() >= 9) 
+        {
+            for (char ch : password.toCharArray()) 
+            {
+                if (Character.isLowerCase(ch)) a = true;
+                else if (Character.isUpperCase(ch)) b = true;
+                else if (Character.isDigit(ch)) c = true;
+                else d = true;
+            }
+
+            if (a && b && c && d)
+                System.out.println("Perfect Password");
+            else
+                System.out.println("Invalid Password");
+        }
+        else 
+        {
+            System.out.println("Invalid Password");
+        }
+    }
+}
