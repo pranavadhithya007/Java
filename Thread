@@ -19,3 +19,25 @@ public class Main
         }
     }
 }
+
+class cake extends Thread
+{
+    public void run()
+    {
+        System.out.println("mixing the raw materials"+cake.currentThread().getId());
+        System.out.println("mixing the cake"+cake.currentThread().getId());
+        System.out.println("decorating the cake"+cake.currentThread().getId());
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        int cakecount=5;
+        for(int i=0;i<cakecount;i++)
+        {
+            cake cake=new cake();
+            cake.start();
+        }
+    }
+}
