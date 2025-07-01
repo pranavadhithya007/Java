@@ -79,3 +79,35 @@ class Main
         
     }
 }
+
+public class Main
+{
+    static void validatePassword(String password) throws Exception 
+    {
+        if (password.length() < 8)
+        {
+            throw new Exception("unga pass word must be strong with atleast 8 Character");
+        } 
+        else 
+        {
+            System.out.println("Password is strong.");
+        }
+    }
+    public static void main(String[] args) 
+    {
+        String password = "Pranav@2004";  
+        try
+        {
+            validatePassword(password);
+        } 
+        catch (Exception e)
+        {
+            System.out.println("we got the Exception: " + e.getMessage());
+        }
+        finally
+        {
+            System.out.println("Password validation complete.");
+        }
+        System.out.println("Program continues");
+    }
+}
