@@ -58,3 +58,24 @@ public class Main
        System.out.println(" vote eligiblity");
    }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        try 
+        {
+            System.out.println(a/b);
+        } 
+        catch(Exception e) 
+        {
+            System.out.println("b is 0");
+        }
+        
+    }
+}
