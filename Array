@@ -307,3 +307,57 @@ class Main
 		}
 	}
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner (System.in);
+        int a=sc.nextInt();
+        //int c=0;
+        if(a>1&&a<10)
+        {
+            int b[]=new int[a+1];
+            int c[]=new int[a+1];
+            System.out.print("Before Swapping - ");
+            for(int i=1;i<=a;i++)
+            {
+                b[i]=sc.nextInt();
+                //System.out.print(" "+b[i]);
+            }
+            System.out.println();
+            System.out.print("After Swappinng -");
+            int v=0;
+            if(a%2==0)
+            {
+                v=a;
+            }
+            else
+            {
+                v=a-1;
+                c[a]=b[a];
+            }
+            for(int i=1;i<=v;i++)
+            {
+                if(i%2==0)
+                {
+                    c[i-1]=b[i];
+                }
+                else
+                {
+                    c[i+1]=b[i];
+                }
+            }
+            for(int i=1;i<=a;i++)
+            {
+                System.out.print(" "+c[i]);
+            }
+        }
+        else
+        {
+            System.out.print("Invalid Array Size.");
+        }
+    }
+}
