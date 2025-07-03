@@ -264,3 +264,46 @@ class Main {
         System.out.println("vowels Count: "+count);
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int k=0,l=0;
+		if(a<10&&a>1)
+		{
+		    int[]b=new int[a];
+		    for(int i=0;i<a;i++)
+		    {
+		        b[i]=sc.nextInt();
+		    }
+		    int n[]=new int[a];
+		    for(int i=0;i<a;i++)
+		    {
+		        if(b[i]%2==0)
+		        {
+		            n[i]=b[i];
+		            l++;
+		            k=k+1;
+		            if(k%2==1)
+		            {
+		                System.out.print(" "+n[i]);
+		            }
+		        }
+		    }
+		    if(l==0)
+		    {
+		        System.out.print("No even numbers in the give Array!");
+		    }
+		  
+		}
+		else
+		{
+		    System.out.println("Invalid Array Size.");
+		}
+	}
+}
