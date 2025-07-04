@@ -405,3 +405,47 @@ class Main
         }
     }
 }
+
+import java.util.*;
+import java.util.Scanner;
+class Main
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a>=1)
+        {
+            int[]b=new int[a];
+            for(int i=0;i<a;i++)
+            {
+                b[i]=sc.nextInt();
+            }
+            int c=sc.nextInt();
+            int d=0;
+            for(int i=0;i<a;i++)
+            {
+                if(b[i]==c)
+                {
+                    d=1;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            if(d>0)
+            {
+                System.out.println("Found");
+            }
+            else
+            {
+                System.out.println("Not Found");
+            }
+        }
+        else
+        {
+            System.out.println("Invalid Array Size.");
+        }
+    }
+}
