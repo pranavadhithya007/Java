@@ -103,3 +103,34 @@ class Main
         System.out.println(sb);
     }
 }
+
+import java.util.Scanner;
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        StringBuilder b=new StringBuilder(a);
+        boolean c=true;
+        while(c) 
+        {
+            c=false;
+            for(int i=0;i<b.length()-1;i++) 
+            {
+                if(b.charAt(i)==b.charAt(i + 1))
+                {
+                    char ch=b.charAt(i);
+                    b.delete(i,i+2);
+                    if(ch!='z') 
+                    {
+                        b.insert(i,(char)(ch+1));
+                    }
+                    c=true;
+                    break;
+                }
+            }
+        }
+        System.out.println(b.toString());
+    }
+}
